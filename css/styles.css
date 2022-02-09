@@ -1,0 +1,105 @@
+/* Logo */
+.logo img {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    margin-inline: 20%;
+    padding-top: 40px;
+    background-color: #FF9A80;
+    position: relative;
+}
+
+body {
+    margin: 0;
+}
+    
+#nav {
+    overflow: hidden;
+    background-color: #FF9A80;
+    width: 360px;
+    height: 1480px;
+
+
+}
+    
+/* navlist designing */
+#nav a {
+    float: left;
+    display: flex;
+    color: #f2f2f2;
+    text-align: left;
+    padding: 25px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Press Start 2P', cursive;
+    margin-inline: 20%;
+    margin-top: 5%;
+    
+}
+    
+/* navlist link hover effect */
+#nav a:hover {
+    background-color: #FF8F80;
+    color: black;
+    overflow: hidden;
+    width: 400px;
+}
+    
+
+
+/* scroll portion design */
+
+    
+.content {
+    padding: 16px;
+    padding-left: 50%;
+}
+    
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 40%;
+    height: 100%
+}
+
+ #copyRight { 
+    position: fixed;
+    display: flex;
+    align-items: flex-start;
+    font-family: 'Fira Sans Condensed' , sans-serif ;
+    font-style: italic;
+    font-weight: 200;
+    color: #FF533D;
+    margin: 6%;
+    margin-top: 33%;
+
+ }
+
+ #hero img {
+    width: 980px;
+    height: 545px;
+    border: 21px;
+    border-style:double;
+    border-color: #FF8F80;
+    margin: 10px;
+    margin-left: 40px;
+    margin-top: 30px;
+
+ }
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+    color:#3B3B3B;
+ }
+
+ p {
+    font-family: 'Fira Sans Condensed' , sans-serif ;
+    color: #3B3B3B;
+ }
+
+ .aboutContainer p {
+     margin-left: 30px;
+     display: flex;
+
+ }
