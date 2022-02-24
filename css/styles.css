@@ -1,105 +1,156 @@
-/* Logo */
-.logo img {
-    display: flex;
-    width: 200px;
-    height: 200px;
-    margin-inline: 20%;
-    padding-top: 40px;
-    background-color: #FF9A80;
+#page-container {
     position: relative;
-}
-
-body {
-    margin: 0;
-}
-    
-#nav {
-    overflow: hidden;
-    background-color: #FF9A80;
-    width: 360px;
-    height: 1480px;
-
-
-}
-    
-/* navlist designing */
-#nav a {
-    float: left;
-    display: flex;
-    color: #f2f2f2;
-    text-align: left;
-    padding: 25px;
-    text-decoration: none;
-    font-size: 17px;
+    padding-left: 330px;
+  }
+  #about-content p {
+    padding-left: 30px;
+  }
+  h1 {
+      font-family: 'Press Start 2P', cursive;
+      font-size: 25px;
+      padding-left: 20px;
+  }
+  h2 {
     font-family: 'Press Start 2P', cursive;
-    margin-inline: 20%;
-    margin-top: 5%;
+    font-size: 25px;
+    padding-left: 20px;
+    padding-top: 40px;
+    
     
 }
-    
-/* navlist link hover effect */
-#nav a:hover {
-    background-color: #FF8F80;
-    color: black;
-    overflow: hidden;
-    width: 400px;
-}
-    
-
-
-/* scroll portion design */
-
-    
-.content {
-    padding: 16px;
-    padding-left: 50%;
-}
-    
-.sticky {
+  #mobile-header {
+    display: none;
+  }
+  #fixed-sidebar {
     position: fixed;
     top: 0;
-    width: 40%;
-    height: 100%
+    left: 0;
+    width: 320px;
+    height: calc(100vh - 0px);
+    background: #FF9A80;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #fixed-sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  #fixed-sidebar ul li {
+    margin: 50px 0;
+    font-family: 'Press Start 2P', cursive;
+    position: sticky;
+   
+  }
+
+ #fixed-sidebar li a {
+      color: white;
+  }
+  
+  #fixed-sidebar li a:hover {
+    background-color: #FF8F80;
+    color: #FF533D;
+    text-decoration: none;
+    display:block;
+    height: 60px;
+    position:relative;
+    padding-top: 15px;
+    border: #FF533D;
+    border-style: double;
+  }
+  #skills-nav b{
+    color: #FF533D;
+    display: block;
+    padding-inline-start: 40px;
+    text-align: left;
+  }
+
+  #hero {
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    
+  }
+  #my-skills-content {
+      position: relative;
+      padding: 20px;
+      height: auto;
+      width: 145vh;
+  }
+  #balloon-background {
+    margin-top: -45px;
+    padding-bottom: 20px;
+    background-position: absolute;
+ }
+
+  #skills-nav ul { 
+      position: absolute;
+      font-family: 'Press Start 2P', cursive;
+      list-style-type: none;
+      font-size: 25px;
+  }
+ #skills-nav li{
+     float: left;
+     padding-left: 10vh;
+     padding-top: 25px;
+ }
+ #skills-nav b:hover {
+    background-color: #FF533D;
+    color:#fff;
+   
+}   
+
+
+#tools-menu :hover :after {
+   background-image: url("/images/Tools\ info.png");
+   display: block;
+   
+}
+ 
+  #hero img{
+    width: calc(145vh - 15px);
+    height: calc(70vh - 0px);
+    border: #FF533D;
+    border-style: double;
+  }
+
+.logo img {
+    height: auto;
+    width: 100%; 
 }
 
- #copyRight { 
-    position: fixed;
-    display: flex;
-    align-items: flex-start;
-    font-family: 'Fira Sans Condensed' , sans-serif ;
+.copyright {
+    font-family: 'Fira Sans Condensed', sans-serif;
     font-style: italic;
     font-weight: 200;
-    color: #FFf;
-    margin: 6%;
-    margin-top: 33%;
+    color: #FF533D;
+}
 
- }
+  @media (max-width: 767px){
+    #page-container {
+      padding: 0 20px;
+    }
+    #fixed-sidebar {
+      display: none;
+    }
+    #mobile-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo img {
+        height: 50px;
+        width: 50px;
+    }
+    h1 h2 {
+        font-family: 'Press Start 2P', cursive;
+        font-size: 16px;
+        padding-left: 20px;
+        
+    }
+  }
 
- #hero img {
-    width: 980px;
-    height: 545px;
-    border: 21px;
-    border-style:double;
-    border-color: #FF8F80;
-    margin: 10px;
-    margin-left: 40px;
-    margin-top: 30px;
-
- }
-
-h1 {
-    font-family: 'Press Start 2P', cursive;
-    font-size: 20px;
-    color:#3B3B3B;
- }
-
- p {
-    font-family: 'Fira Sans Condensed' , sans-serif ;
-    color: #3B3B3B;
- }
-
- .aboutContainer p {
-     margin-left: 30px;
-     display: flex;
-
- }
