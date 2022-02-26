@@ -1,156 +1,273 @@
 #page-container {
-    position: relative;
-    padding-left: 330px;
-  }
-  #about-content p {
-    padding-left: 30px;
-  }
-  h1 {
-      font-family: 'Press Start 2P', cursive;
-      font-size: 25px;
-      padding-left: 20px;
-  }
-  h2 {
+  position: relative;
+  padding-left: 330px;
+}
+html body {
+  margin:0;
+  padding:0;
+  overflow-x: hidden;
+}
+#about-content p {
+  padding-left: 15px;
+  font-size: 15px;
+}
+h1 {
     font-family: 'Press Start 2P', cursive;
     font-size: 25px;
     padding-left: 20px;
-    padding-top: 40px;
-    
-    
 }
-  #mobile-header {
-    display: none;
-  }
-  #fixed-sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 320px;
-    height: calc(100vh - 0px);
-    background: #FF9A80;
-    text-align: center;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  #fixed-sidebar ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  #fixed-sidebar ul li {
-    margin: 50px 0;
-    font-family: 'Press Start 2P', cursive;
-    position: sticky;
-   
-  }
-
- #fixed-sidebar li a {
-      color: white;
-  }
+h2 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 25px;
+  padding-top: 20px;
   
-  #fixed-sidebar li a:hover {
-    background-color: #FF8F80;
-    color: #FF533D;
-    text-decoration: none;
-    display:block;
-    height: 60px;
-    position:relative;
-    padding-top: 15px;
-    border: #FF533D;
-    border-style: double;
-  }
-  #skills-nav b{
-    color: #FF533D;
-    display: block;
-    padding-inline-start: 40px;
-    text-align: left;
-  }
-
-  #hero {
-    padding-left: 20px;
-    padding-bottom: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
-    
-  }
-  #my-skills-content {
-      position: relative;
-      padding: 20px;
-      height: auto;
-      width: 145vh;
-  }
-  #balloon-background {
-    margin-top: -45px;
-    padding-bottom: 20px;
-    background-position: absolute;
- }
-
-  #skills-nav ul { 
-      position: absolute;
-      font-family: 'Press Start 2P', cursive;
-      list-style-type: none;
-      font-size: 25px;
-  }
- #skills-nav li{
-     float: left;
-     padding-left: 10vh;
-     padding-top: 25px;
- }
- #skills-nav b:hover {
-    background-color: #FF533D;
-    color:#fff;
-   
-}   
-
-
-#tools-menu :hover :after {
-   background-image: url("/images/Tools\ info.png");
-   display: block;
-   
 }
+h3 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 25px;
+  padding-top: 35px;
+  padding-left: 20px;
+  position: relative;
+  top: -40px;
+    
+  
+}
+#mobile-header {
+  display: none;
+}
+
+/*Side Bar Nav*/
+#fixed-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: calc(100vh - 0px);
+  background: #FF9A80;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#fixed-sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+#fixed-sidebar ul li {
+  margin: 50px 0;
+  font-family: 'Press Start 2P', cursive;
+  position: sticky;
  
-  #hero img{
-    width: calc(145vh - 15px);
-    height: calc(70vh - 0px);
-    border: #FF533D;
-    border-style: double;
-  }
+}
+
+#fixed-sidebar li a {
+    color: white;
+}
+
+#fixed-sidebar li a:hover {
+  background-color: #FF8F80;
+  color: #FF533D;
+  text-decoration: none;
+  display:block;
+  height: 60px;
+  position:relative;
+  padding-top: 15px;
+  border: #FF533D;
+  border-style: double;
+}
+/*End Side Nav */
+
+#skills-nav b{
+  color: #FF533D;
+  display: block;
+  padding-inline-start: 40px;
+  text-align: left;
+}
+
+#hero {
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
+/* My Skills Menus and Content START*/
+#my-skills-content {
+  position: relative;
+  padding: 20px;
+  height: auto;
+  width: 145vh;
+}
+#balloon-background {
+  position: relative;
+  top:-50px;
+  padding-bottom: 30px;
+}
+.tools-menu {
+  position: absolute;
+  left: 40px;
+  bottom: 535px;
+  font-size: 25px;
+  font-family: 'Press Start 2P', cursive;
+  color:#FF705D;
+}
+.tools-menu:hover{
+ position: absolute;
+ color: #fff;
+ background-color: #FF8F80;
+}
+.tools-menu:hover + .hide {
+  display: block;
+}
+.ux-menu {
+  position: absolute;
+  left: 40px;
+  bottom: 400px;
+  font-size: 25px;
+  font-family: 'Press Start 2P', cursive;
+  color:#FF705D;
+}
+.ux-menu:hover{
+ position: absolute;
+ color: #fff;
+ background-color: #FF8F80;
+}
+.ux-menu:hover + .hide {
+  display: block;
+}
+.ui-menu {
+  position: absolute;
+  left: 40px;
+  bottom: 250px;
+  font-size: 25px;
+  font-family: 'Press Start 2P', cursive;
+  color:#FF705D;
+}
+.ui-menu:hover{
+ position: absolute;
+ color: #fff;
+ background-color: #FF8F80;
+}
+.ui-menu:hover + .hide {
+  display: block;
+}
+.fed-menu {
+  position: absolute;
+  left: 40px;
+  bottom: 100px;
+  font-size: 25px;
+  font-family: 'Press Start 2P', cursive;
+  color:#FF705D;
+}
+.fed-menu:hover{
+ position: absolute;
+ color: #fff;
+ background-color: #FF8F80;
+}
+.fed-menu:hover + .hide {
+  display: block;
+}
+.hide {
+  display: none;
+  left:250px;
+  position:absolute;
+  top:100px ;
+}
+
+/* My Skills Menus and Content END*/
+
+/* My Work Content START*/
+.habitat img{
+  height: auto; 
+  width: 500px;
+  position:absolute;
+  top:1550px;
+}
+.habitat {
+  top: 700px;
+}
+.lemon-zest img{
+  height: auto; 
+  width: 500px;
+  position:absolute;
+  top:1550px;
+  left: 900px;
+}
+.lemon-zest  {
+  top: 700px;
+}
+.travel-cat img{
+  height: auto; 
+  width: 500px;
+  position:absolute;
+  top:1850px;
+  
+ 
+  
+  
+}
+.travel-cat {
+  top: 700px;
+}
+.place-holder{
+  display:block;
+  background-color: #FF9A80;
+  height:300px;
+  width: 700px;
+  left:875px;
+  top:1900px;
+  position: absolute;
+}
+
+#my-work-content{
+  display:block;
+  height:auto;
+  width:100%;
+}
+/* My Work Content END */
+#hero img{
+  width: calc(145vh - 30px);
+  height: calc(70vh - 0px);
+  border: #FF533D;
+  border-style: double;
+}
 
 .logo img {
-    height: auto;
-    width: 100%; 
+  height: auto;
+  width: 100%; 
 }
 
 .copyright {
-    font-family: 'Fira Sans Condensed', sans-serif;
-    font-style: italic;
-    font-weight: 200;
-    color: #FF533D;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-style: italic;
+  font-weight: 200;
+  color: #FF533D;
 }
 
-  @media (max-width: 767px){
-    #page-container {
-      padding: 0 20px;
-    }
-    #fixed-sidebar {
-      display: none;
-    }
-    #mobile-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .logo img {
-        height: 50px;
-        width: 50px;
-    }
-    h1 h2 {
-        font-family: 'Press Start 2P', cursive;
-        font-size: 16px;
-        padding-left: 20px;
-        
-    }
+@media (max-width: 767px){
+  #page-container {
+    padding: 0 20px;
   }
+  #fixed-sidebar {
+    display: none;
+  }
+  #mobile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo img {
+      height: 50px;
+      width: 50px;
+  }
+  h1 h2 {
+      font-family: 'Press Start 2P', cursive;
+      font-size: 16px;
+      padding-left: 20px;
+      
+  }
+}
+
 
