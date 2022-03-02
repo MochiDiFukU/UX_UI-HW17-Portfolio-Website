@@ -1,77 +1,260 @@
 <!DOCTYPE html>
-
-<html lang="en">
-
-    <head>
-        
-         <!--Style Sheets Boot Strap and Css-->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link href="css/styles.css" rel="stylesheet"> 
-
-        <!---FONT-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-            <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&display=swap" rel="stylesheet">
     
-     
-    <meta name="viewport"
-        content="width= 1375px, initial-scale=1">
+    <html lang="en">
 
+        <head>
+                 <!-- Global site tag (gtag.js) - Google Analytics -->
+                 <script async src="https://www.googletagmanager.com/gtag/js?id=G-0HK4QWG8S3"></script>
+                 <script>
+                 window.dataLayer = window.dataLayer || [];
+                 function gtag(){dataLayer.push(arguments);}
+                 gtag('js', new Date());
 
-    </head>
-
-    <body>
-    
-        <!---Sticky Nav --> 
+                 gtag('config', 'G-0HK4QWG8S3');
+                 </script>
+                    <!-- Hotjar Tracking Code for https://mochidifunku.github.io/ux_ui-hw17-portfolio-website/ -->
+                        <script>
+                            (function(h,o,t,j,a,r){
+                                h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+                                h._hjSettings={hjid:2822079,hjsv:6};
+                                a=o.getElementsByTagName('head')[0];
+                                r=o.createElement('script');r.async=1;
+                                r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+                                a.appendChild(r);
+                            })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+                        </script>
+            
+                                     <!--Style Sheets Boot Strap and Css-->
+                                        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+                                        <link href="css/styles.css" rel="stylesheet"> 
+                                         <!---FONT-->
+                                        <link rel="preconnect" href="https://fonts.googleapis.com">
+                                        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
        
-        <div class="sticky">
-            <div id="nav">
-             <div class="logo">
-                <b href="#" class="logo"><img src="../images/Portfolio Logo .png" alt="Pauline Logo"></b>
-             </div>
-                        <a href="javascript:void(0)">About Me</a>
-                        <a href="javascript:void(0)">My Skills</a>
-                        <a href="javascript:void(0)">Work</a>
-                        <a href="javascript:void(0)">Contact Me</a>
-           
         
-                     <div id="copyRight">
-                      &copy; Pauline Martinez 2022
-                     </div>
-         </div>
-        </div>
+                                        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&display=swap" rel="stylesheet">
+        </head>
+            <body>
+                
+                    <div id="mobile-header">
+                      <div class="logo"><img src="images/Portfolio Logo .png"></div>
+                      <a href="#">MENU</a>
+                    </div>
+                    <section id="page-container">
+                    <nav id="fixed-sidebar">
+                      <div class="logo">
+                          <a href="#about-content"><img src="images/Portfolio Logo .png"></a></div>
+                      <ul>
+                        <li><a href="#about-content">About Me</a></li>
+                        <li><a href="#my-skills-content">My Skills</a></li>
+                        <li><a href="#my-work-content">My Work</a></li>
+                        <li><a href="#">Contact Me</a></li>
+                      </ul>
+                      <div class="copyright">&copy; 2022 Pauline Martinez</div>
+                    </nav>
+                    
+                    <div id="about-content">
+                        <div id="hero"> 
+                            <img src="images/Hero.png" alt="Hero">
+                        </div>
+                        <h1>About Me</h1>
+                      <p>I am Pauline Martinez, a freelance UX/UI designer. I specialize in User Testing, Prototyping, UX Writing,
+                        and enjoy solving user problems that are within the average users day to day. 
+                        Interested in the growth of technology and design. The design process is my favorite part. User Testing and Prototyping allows me <br> 
+                        to get out of my comfort zone and think more creatively. I am teachable, disciplined, and enjoy creating something that brings users comfort and confidence <br> 
+                        to use. Aspiring to work in Fashion/Retail, Beauty, Hospitality, and Travel Fields. Location: Remote, United States or Hybrid within the greater Phoenix area in Arizona. 
+                        I have been a certified designer for about half a year now. </p>
+                    </div>
 
-        <div id="hero" style="padding:0px 360px;">
-            <img src="../images/Hero.png" alt="Hero">
-          </div>
-        
-          <div class="scrollable"
-			style="padding: 15px 390px 0px;">
-
-            <section class="aboutContainer">
-               <div id="aboutMeTitle">
-                <h1>About Me</h1>
-                </div>
-                    <p>I am Pauline Martinez, a freelance UX/UI designer. I specialize in User Testing, Prototyping, UX Writing, and enjoy solving user problems that are within the average users day to day. 
-
-                        Interested in the growth of technology and design. The design process is my favorite part. User Testing and Prototyping allows me to get out of my comfort zone and think more creatively. I am teachable, disciplined, and enjoy creating something that brings users comfort and confidence to use.
-                        
-                        Aspiring to work in Fashion/Retail, Beauty, Hospitality, and Travel Fields. Location: Remote, United States or Hybrid within the greater Phoenix area in Arizona. I have been a certified designer for about half a year now. 
-                    </p>
-            </section>  
+                    <div id="my-skills-content">
+                        <h2>My Skills</h2>
+                        <div id="balloon-background">
+<!-- Tab links -->
 
 
-        </div>
+<!-- Tab links -->
+<div class="my-skills-nav">
+<div class="tab">
+    <button class="tablinks" onclick="openTab(event, 'Tools')">Tools</button>
+    <button class="tablinks" onclick="openTab(event, 'Ux')">Ux</button>
+    <button class="tablinks" onclick="openTab(event, 'Ui')">Ui</button>
+  <button class="tablinks"onclick="openTab(event, 'Front-End')">Front-End Dev.</button>
+  </div>
+  <!-- Tab content -->
+  <div id="Tools" class="tabcontent">
+     <span onclick="this.parentElement.style.display='none'">X</span><br>
+    <h4> Design</h4>
+    <p> Figma | AdobeXD | AI | PS | Paper & Pencil</p>
+    <h4> Collaboration</h4>
+    <p> Miro | Invision | Trello | Zoom | Google Meets</p>
+    <h4> Coding/FED</h4>
+    <p> Github | VSCode | Bootstrap 4 </p>
+    <h4> Operating Systems</h4>
+    <p> Windows/Microsoft | IOS/Apple  </p>
+     
+  </div>
+  
+  
+  <div id="Ux" class="tabcontent">
+    <span onclick="this.parentElement.style.display='none'">X</span><br>
+    <ul>
+        <li>User Research</li>
+        <li>Usability Testing & Analysis</li>
+        <li>Wireframing PAPER/LO/HI Fidelity</li>
+        <li>Ideation</li>
+        <li>Persona Creation</li>
+        <li>A/B Testing</li>
+        <li>UX Writing</li>
+        <li>User Interviews & Planning</li>
+    </ul>
+    
+    
+  </div>
+  
+  <div id="Ui" class="tabcontent">
+    <span onclick="this.parentElement.style.display='none'">X</span><br>
+    <ul>
+        <li>Interaction Design</li>
+        <li>Storyboarding</li>
+        <li>Information Architecture & Site Mapping</li>
+        <li>Redlining & Annotations</li>
+        <li>Prototyping</li>
+        <li>UI Specification</li>
+        <li>Wireframe Layout</li>
+        <li>Data Visualization</li>
+    </ul>
+  </div>
+  <div id="Front-End" class="tabcontent">
+    <span onclick="this.parentElement.style.display='none'">X</span><br>
+    <ul>
+        <li>HTML</li>
+        <li>JavaScript</li>
+        <li>CSS</li>
+        <li>Bootstrap 4</li>
+        <li>Jquerty</li>
+        <li>Problem Solving</li>
+        <li>Testing & Debugging</li>
+        <li>Responsive Design</li>
+    </ul>
+  </div>
+</div>
+</div> 
+  <style>
+    .tab {
+    overflow: hidden;
+    border: none;
+    background-color:inherit;
+    width: 60%;
+  }
+  
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+  
+    border: solid;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-family: 'Press Start 2P', cursive;
+  }
+  span {
+    float:right;
+    color:black;
+    cursor:pointer;
+    padding-right:20px;
+    padding-top:20px;
+  }
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #fff;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color:#FF8F80;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    width:auto;
+    margin-bottom: 0;
+    border: 1px solid #ccc;
+    border-top: none;
+    animation: fadeEffect 1s; 
+    background-color: #fff;
+  }
 
-        <!--Boots strap Java-->
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+  /* Go from zero to full opacity */
+  @keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  </style>
+  <script>
+    function openTab(evt, tabName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+  
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+  
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+  
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+  </script>
+  
+  
+</div>
 
-    </body>
 
 
 
+                          
+            
+                    <div id="my-work-content">
+                        <h3>My Work</h3>               
+                            <div class="work-nav">
+                                <div class="habitat">
+                                <img src="images/habitat for humanity.png" alt="habitat-for-humanity-logo">
+                                </div>
+                                <div class="lemon-zest">
+                                    <img src="images/lemonzest.png" alt="lemon-zest-logo">
+                                    </div>
+                                <div class="travel-cat">
+                                    <img src="images/travel cat.png" alt="travel-cat-logo">
+                                    </div>
+                                <div class="place-holder"></div>    
+                            </div>
+                    </div>
+                            
+                                
+                                      
 
 
 
-</html>
+                  </section>
+                
+                  
+
+
+                
+
+
+            </body> 
+    
+    
+    
+    
+    
+    </html>

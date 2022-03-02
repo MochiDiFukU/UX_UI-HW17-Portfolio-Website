@@ -1,105 +1,233 @@
-/* Logo */
-.logo img {
-    display: flex;
-    width: 200px;
-    height: 200px;
-    margin-inline: 20%;
-    padding-top: 40px;
-    background-color: #FF9A80;
-    position: relative;
+#page-container {
+  position: absolute;
+  padding-left: 350px;
+  padding-right: 80px;
+  width:100%;
 }
-
-body {
-    margin: 0;
+html body {
+  margin:0;
+  padding:0;
+  overflow-x: hidden;
 }
-    
-#nav {
-    overflow: hidden;
-    background-color: #FF9A80;
-    width: 360px;
-    height: 1480px;
-
-
+#about-content p {
+  padding-left: 15px;
+  font-size: 15px;
 }
-    
-/* navlist designing */
-#nav a {
-    float: left;
-    display: flex;
-    color: #f2f2f2;
-    text-align: left;
-    padding: 25px;
-    text-decoration: none;
-    font-size: 17px;
-    font-family: 'Press Start 2P', cursive;
-    margin-inline: 20%;
-    margin-top: 5%;
-    
+#about-content{
+  padding-bottom: 50px;
 }
-    
-/* navlist link hover effect */
-#nav a:hover {
-    background-color: #FF8F80;
-    color: black;
-    overflow: hidden;
-    width: 400px;
-}
-    
-
-
-/* scroll portion design */
-
-    
-.content {
-    padding: 16px;
-    padding-left: 50%;
-}
-    
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 40%;
-    height: 100%
-}
-
- #copyRight { 
-    position: fixed;
-    display: flex;
-    align-items: flex-start;
-    font-family: 'Fira Sans Condensed' , sans-serif ;
-    font-style: italic;
-    font-weight: 200;
-    color: #FFf;
-    margin: 6%;
-    margin-top: 33%;
-
- }
-
- #hero img {
-    width: 980px;
-    height: 545px;
-    border: 21px;
-    border-style:double;
-    border-color: #FF8F80;
-    margin: 10px;
-    margin-left: 40px;
-    margin-top: 30px;
-
- }
-
 h1 {
     font-family: 'Press Start 2P', cursive;
-    font-size: 20px;
-    color:#3B3B3B;
- }
+    font-size: 25px;
+    padding-left: 20px;
+}
+h2 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 25px;
+  padding-top: 20px;
+  
+}
+h3 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 25px;
+  padding-top: 35px;
+  padding-left: 20px;
+  position: relative;
+  top: -40px;
+}
+h4{
+  padding-left: 20px;
+}
+#Tools p {
+  padding-left:20px;
+}
 
- p {
-    font-family: 'Fira Sans Condensed' , sans-serif ;
-    color: #3B3B3B;
- }
+#mobile-header {
+  display: none;
+}
 
- .aboutContainer p {
-     margin-left: 30px;
-     display: flex;
+/*Side Bar Nav*/
+#fixed-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: calc(100vh - 0px);
+  background: #FF9A80;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  overflow: hidden;
+}
+#fixed-sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+#fixed-sidebar ul li {
+  margin: 50px 0;
+  font-family: 'Press Start 2P', cursive;
+  position: sticky;
+ 
+}
 
- }
+#fixed-sidebar li a {
+    color: white;
+}
+
+#fixed-sidebar li a:hover {
+  background-color: #FF8F80;
+  color: #FF533D;
+  text-decoration: none;
+  display:block;
+  height: 60px;
+  position:relative;
+  padding-top: 15px;
+  border: #FF533D;
+  border-style: double;
+}
+/*End Side Nav */
+
+
+#hero {
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
+/* My Skills Menus and Content START*/
+#my-skills-content {
+  padding-top: 50px;
+ padding-bottom: 100px;
+  display: block;
+}
+#balloon-background {
+  background-image: url(../images/Balooncake3D.png);
+  min-height: 80vh;
+  padding-top:30px;
+   background-repeat: no-repeat;
+   background-size: 100% auto;
+  
+}
+
+.tabcontent ul {
+  list-style-type:circle;
+}
+/* My Skills Menus and Content END*/
+
+/* My Work Content START*/
+.habitat img{
+  height: auto; 
+  width: 500px;
+  position:absolute;
+  border: #FF533D;
+  border-style: dotted;
+}
+
+
+.lemon-zest img{
+  height: auto; 
+  width: 500px;
+  position:absolute;
+  left: 500px;
+  border: #FF533D;
+  border-style: dotted;
+}
+
+.travel-cat img{
+  height: auto; 
+  width: 500px;
+  position:absolute;
+  border: #FF533D;
+  border-style: dotted;
+  top: 455px;
+}
+
+.place-holder{
+  height: 335px; 
+  width: 500px;
+  position:absolute;
+  left: 499px;
+  border: #fff;
+  border-style: dotted;
+  top:455px;
+  background-color: #FF533D;
+  
+}
+
+#my-work-content{
+  display:block;
+  height:auto;
+  width:100%;
+  position: relative;
+  padding-top: 50px;
+  
+}
+.work-nav {
+  padding-bottom: 700px;
+}
+/* My Work Content END */
+#hero img{
+  width: 100%;
+  height: auto;
+  border: #FF533D;
+  border-style: double;
+}
+
+.logo img {
+  height: auto;
+  width: 100%; 
+}
+
+.copyright {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-style: italic;
+  font-weight: 200;
+  color: #FF533D;
+}
+
+@media (max-width: 767px){
+  #page-container {
+    padding: 0 20px;
+  }
+  #fixed-sidebar {
+    display: none;
+  }
+  #mobile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo img {
+      height: 50px;
+      width: 50px;
+  }
+  h1 h2 {
+      font-family: 'Press Start 2P', cursive;
+      font-size: 16px;
+      padding-left: 20px;
+      
+  }
+  img {
+    height:auto;
+    width:100%;
+  }
+  #my-skills-content {
+    font-size: 14px;
+
+  }
+  #balloon-background {
+    background-image: url(/images/Balooncake3D.png);
+    top: 500px;
+    padding-bottom:40px;
+     background-repeat: no-repeat;
+     background-size: 100% auto;
+    
+  }
+}
+
+
+
