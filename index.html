@@ -68,7 +68,7 @@
 
                     <div id="my-skills-content">
                         <h2>My Skills</h2>
-                        <div id="balloon-background"><img src="images/Balooncake3D.png" alt="skills-background" style="width: 100%; height: auto;"></div> 
+                        <div id="balloon-background">
 <!-- Tab links -->
 
 
@@ -97,32 +97,59 @@
   
   <div id="Ux" class="tabcontent">
     <span onclick="this.parentElement.style.display='none'">X</span><br>
-    <h4>Paris</h4>
-    <p>Paris is the capital of France.</p>
+    <ul>
+        <li>User Research</li>
+        <li>Usability Testing & Analysis</li>
+        <li>Wireframing PAPER/LO/HI Fidelity</li>
+        <li>Ideation</li>
+        <li>Persona Creation</li>
+        <li>A/B Testing</li>
+        <li>UX Writing</li>
+        <li>User Interviews & Planning</li>
+    </ul>
+    
+    
   </div>
   
   <div id="Ui" class="tabcontent">
     <span onclick="this.parentElement.style.display='none'">X</span><br>
-    <h4>Tokyo</h4>
-    <p>Tokyo is the capital of Japan.</p>
+    <ul>
+        <li>Interaction Design</li>
+        <li>Storyboarding</li>
+        <li>Information Architecture & Site Mapping</li>
+        <li>Redlining & Annotations</li>
+        <li>Prototyping</li>
+        <li>UI Specification</li>
+        <li>Wireframe Layout</li>
+        <li>Data Visualization</li>
+    </ul>
   </div>
   <div id="Front-End" class="tabcontent">
     <span onclick="this.parentElement.style.display='none'">X</span><br>
-    <h4>Tokyo</h4>
-    <p>Tokyo is the capital of Japan.</p>
+    <ul>
+        <li>HTML</li>
+        <li>JavaScript</li>
+        <li>CSS</li>
+        <li>Bootstrap 4</li>
+        <li>Jquerty</li>
+        <li>Problem Solving</li>
+        <li>Testing & Debugging</li>
+        <li>Responsive Design</li>
+    </ul>
   </div>
 </div>
+</div> 
   <style>
     .tab {
     overflow: hidden;
-    border: 1px solid #000;
-    background-color: #f1f1f1;
+    border: none;
+    background-color:inherit;
+    width: 60%;
   }
   
   /* Style the buttons that are used to open the tab content */
   .tab button {
-    background-color: inherit;
-    float: left;
+  
     border: solid;
     outline: none;
     cursor: pointer;
@@ -148,7 +175,8 @@
   /* Style the tab content */
   .tabcontent {
     display: none;
-    padding: 6px 12px;
+    width:auto;
+    margin-bottom: 0;
     border: 1px solid #ccc;
     border-top: none;
     animation: fadeEffect 1s; 
