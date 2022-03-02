@@ -96,20 +96,20 @@ h3 {
 /* My Skills Menus and Content START*/
 #my-skills-content {
   padding-top: 50px;
-  padding-bottom: 100px;
+ padding-bottom: 100px;
   display: block;
 }
 #balloon-background {
-  background-image: url(.../images/Balooncake3D.png);
-  top: 500px;
-  padding-bottom:550px;
+  background-image: url(../images/Balooncake3D.png);
+  min-height: 80vh;
+  padding-top:30px;
    background-repeat: no-repeat;
    background-size: 100% auto;
   
 }
 
 .my-skills-nav {
-padding-top: 40px;
+
 }
 
 /* My Skills Menus and Content END*/
