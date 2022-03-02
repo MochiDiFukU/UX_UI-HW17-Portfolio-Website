@@ -1,6 +1,8 @@
 #page-container {
-  position: relative;
-  padding-left: 330px;
+  position: absolute;
+  padding-left: 350px;
+  padding-right: 80px;
+  width:100%;
 }
 html body {
   margin:0;
@@ -10,6 +12,9 @@ html body {
 #about-content p {
   padding-left: 15px;
   font-size: 15px;
+}
+#about-content{
+  padding-bottom: 50px;
 }
 h1 {
     font-family: 'Press Start 2P', cursive;
@@ -41,14 +46,15 @@ h3 {
   position: fixed;
   top: 0;
   left: 0;
-  width: 320px;
+  width: 300px;
   height: calc(100vh - 0px);
   background: #FF9A80;
   text-align: center;
   padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-between; 
+  overflow: hidden;
 }
 #fixed-sidebar ul {
   list-style-type: none;
@@ -79,12 +85,6 @@ h3 {
 }
 /*End Side Nav */
 
-#skills-nav b{
-  color: #FF533D;
-  display: block;
-  padding-inline-start: 40px;
-  text-align: left;
-}
 
 #hero {
   padding-left: 20px;
@@ -95,85 +95,21 @@ h3 {
 
 /* My Skills Menus and Content START*/
 #my-skills-content {
-  position: relative;
-  padding: 20px;
-  height: auto;
-  width: 145vh;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  display: block;
 }
 #balloon-background {
-  position: relative;
-  top:-50px;
-  padding-bottom: 30px;
+  background-image: url(.../images/Balooncake3D.png);
+  top: 500px;
+  padding-bottom:550px;
+   background-repeat: no-repeat;
+   background-size: 100% auto;
+  
 }
-.tools-menu {
-  position: absolute;
-  left: 40px;
-  bottom: 535px;
-  font-size: 25px;
-  font-family: 'Press Start 2P', cursive;
-  color:#FF705D;
-}
-.tools-menu:hover{
- position: absolute;
- color: #fff;
- background-color: #FF8F80;
-}
-.tools-menu:hover + .hide {
-  display: block;
-}
-.ux-menu {
-  position: absolute;
-  left: 40px;
-  bottom: 400px;
-  font-size: 25px;
-  font-family: 'Press Start 2P', cursive;
-  color:#FF705D;
-}
-.ux-menu:hover{
- position: absolute;
- color: #fff;
- background-color: #FF8F80;
-}
-.ux-menu:hover + .hide {
-  display: block;
-}
-.ui-menu {
-  position: absolute;
-  left: 40px;
-  bottom: 250px;
-  font-size: 25px;
-  font-family: 'Press Start 2P', cursive;
-  color:#FF705D;
-}
-.ui-menu:hover{
- position: absolute;
- color: #fff;
- background-color: #FF8F80;
-}
-.ui-menu:hover + .hide {
-  display: block;
-}
-.fed-menu {
-  position: absolute;
-  left: 40px;
-  bottom: 100px;
-  font-size: 25px;
-  font-family: 'Press Start 2P', cursive;
-  color:#FF705D;
-}
-.fed-menu:hover{
- position: absolute;
- color: #fff;
- background-color: #FF8F80;
-}
-.fed-menu:hover + .hide {
-  display: block;
-}
-.hide {
-  display: none;
-  left:250px;
-  position:absolute;
-  top:100px ;
+
+.my-skills-nav {
+padding-top: 40px;
 }
 
 /* My Skills Menus and Content END*/
@@ -183,53 +119,56 @@ h3 {
   height: auto; 
   width: 500px;
   position:absolute;
-  top:1550px;
+  border: #FF533D;
+  border-style: dotted;
 }
-.habitat {
-  top: 700px;
-}
+
+
 .lemon-zest img{
   height: auto; 
   width: 500px;
   position:absolute;
-  top:1550px;
-  left: 900px;
+  left: 500px;
+  border: #FF533D;
+  border-style: dotted;
 }
-.lemon-zest  {
-  top: 700px;
-}
+
 .travel-cat img{
   height: auto; 
   width: 500px;
   position:absolute;
-  top:1850px;
-  
- 
-  
-  
+  border: #FF533D;
+  border-style: dotted;
+  top: 405px;
 }
-.travel-cat {
-  top: 700px;
-}
+
 .place-holder{
-  display:block;
-  background-color: #FF9A80;
-  height:300px;
-  width: 700px;
-  left:875px;
-  top:1900px;
-  position: absolute;
+  height: 335px; 
+  width: 500px;
+  position:absolute;
+  left: 500px;
+  border: #fff;
+  border-style: dotted;
+  top:405px;
+  background-color: #FF533D;
+  
 }
 
 #my-work-content{
   display:block;
   height:auto;
   width:100%;
+  position: relative;
+  padding-top: 50px;
+  
+}
+.work-nav {
+  padding-bottom: 700px;
 }
 /* My Work Content END */
 #hero img{
-  width: calc(145vh - 30px);
-  height: calc(70vh - 0px);
+  width: 100%;
+  height: auto;
   border: #FF533D;
   border-style: double;
 }
@@ -268,6 +207,23 @@ h3 {
       padding-left: 20px;
       
   }
+  img {
+    height:auto;
+    width:100%;
+  }
+  #my-skills-content {
+    font-size: 14px;
+
+  }
+  #balloon-background {
+    background-image: url(/images/Balooncake3D.png);
+    top: 500px;
+    padding-bottom:40px;
+     background-repeat: no-repeat;
+     background-size: 100% auto;
+    
+  }
 }
+
 
 
