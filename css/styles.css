@@ -100,7 +100,7 @@ h3 {
   display: block;
 }
 #balloon-background {
-  background-image: url(/images/Balooncake3D.png);
+  background-image: url(.../images/Balooncake3D.png);
   top: 500px;
   padding-bottom:550px;
    background-repeat: no-repeat;
